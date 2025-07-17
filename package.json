@@ -1,0 +1,26 @@
+{
+  "author": "",
+  "dependencies": {},
+  "description": "Village Life AI",
+  "devDependencies": {
+    "typescript": "5.8.2",
+    "typescript-to-lua": "1.31.0"
+  },
+  "license": "MIT",
+  "mod": {
+    "assets": [
+      "raw"
+    ],
+    "id": "a528c844-01b3-4164-aedc-1384508caf3f",
+    "info": null,
+    "title": "Village Life AI"
+  },
+  "name": "co.gudao.mod.a528c844-01b3-4164-aedc-1384508caf3f",
+  "scripts": {
+    "build": "tstl",
+    "dev": "tstl --watch",
+    "release": "tstl \u0026\u0026 gd-mod release",
+    "assets": "gd-mod assets"
+  },
+  "version": "1.0.17"
+}
