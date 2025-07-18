@@ -30,5 +30,17 @@ export const locations: Record<string, Location> = {
     title: '鹈鹕镇广场',
     description: '丰收节期间的结局公开场景，Emily公开专栏作者身份。',
     tags: ['室外', '结局场景', '节日']
+  },
+  location_forest_stump: {
+    id: 'location_forest_stump',
+    title: '森林树桩',
+    description: '雨夜中发现小女孩求助信的地点，对应原剧「失去宠物」章节。',
+    tags: ['室外', '探索场景', '雨夜']
+  },
+  location_emily_house: {
+    id: 'location_emily_house',
+    title: 'Emily的家',
+    description: 'Emily向Jas展示专栏读者感谢信，揭露「糖糖」身份的场所。',
+    tags: ['室内', '真相揭露', '家庭']
   }
 };
