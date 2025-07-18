@@ -30,5 +30,55 @@ export const scenes: Record<string, Scene> = {
     dialogueId: 'dialogue_ch3_greenhouse_caroline_teach',
     dependentSceneIds: ['scene_ch2_beach_conflict'],
     locationId: 'location_greenhouse'
+  },
+  scene_ch4_greenhouse_repair: {
+    id: 'scene_ch4_greenhouse_repair',
+    title: '温室秘语',
+    description: '玩家协助Emily修复温室水管，解锁Caroline的园艺日记',
+    tags: ['第四章', '互动', '线索解锁'],
+    speakerIds: ['speaker_emily', 'speaker_player'],
+    dialogueId: 'dialogue_ch4_greenhouse_repair',
+    dependentSceneIds: ['scene_ch3_greenhouse_memory'],
+    locationId: 'location_greenhouse'
+  },
+  scene_ch5_forest_letter: {
+    id: 'scene_ch5_forest_letter',
+    title: '雨夜信件',
+    description: '森林树桩发现小女孩求助信（寻找走失的猫）',
+    tags: ['第五章', '探索', '外部冲突'],
+    speakerIds: ['speaker_emily', 'speaker_player'],
+    dialogueId: 'dialogue_ch5_forest_letter',
+    dependentSceneIds: ['scene_ch4_greenhouse_repair'],
+    locationId: 'location_forest_stump'
+  },
+  scene_ch6_mountain_top: {
+    id: 'scene_ch6_mountain_top',
+    title: '山顶暴雨',
+    description: 'Jas离家出走，Emily在山顶找到她并坦白心结',
+    tags: ['第六章', '高潮', '情感释放'],
+    speakerIds: ['speaker_jas', 'speaker_emily'],
+    dialogueId: 'dialogue_ch6_mountain_confession',
+    dependentSceneIds: ['scene_ch5_forest_letter'],
+    locationId: 'location_mountain_top'
+  },
+  scene_ch7_house_reveal: {
+    id: 'scene_ch7_house_reveal',
+    title: '糖糖的真相',
+    description: 'Emily向Jas展示专栏读者的感谢信',
+    tags: ['第七章', '真相揭露', '理解'],
+    speakerIds: ['speaker_emily', 'speaker_jas'],
+    dialogueId: 'dialogue_ch7_house_reveal',
+    dependentSceneIds: ['scene_ch6_mountain_top'],
+    locationId: 'location_emily_house'
+  },
+  scene_ch8_square_confession: {
+    id: 'scene_ch8_square_confession',
+    title: '丰收节告白',
+    description: 'Emily在鹈鹕镇广场公开专栏作者身份',
+    tags: ['第八章', '结局', '公开和解'],
+    speakerIds: ['speaker_emily', 'speaker_alex', 'speaker_jas', 'speaker_player'],
+    dialogueId: 'dialogue_ch8_square_confession',
+    dependentSceneIds: ['scene_ch7_house_reveal'],
+    locationId: 'location_town_square'
   }
 };
