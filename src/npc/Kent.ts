@@ -1,15 +1,15 @@
-import { Village } from "../def";
+import { GDateSeason, GDateWeekday, Gender, GLocationName, NPC } from "../def/village";
 
 export default {
     name: 'Kent',
     description: '肯特',
-    gender: Village.Gender.Male,
+    gender: Gender.Male,
     features: ['所有宝石', '肉类', '蔬菜(除大蒜)', '水果'],
     birthday: {
-        season: Village.GDateSeason.Summer,
+        season: GDateSeason.Summer,
         day: 4,
         year: 0,
-        weekday: Village.GDateWeekday.Monday
+        weekday: GDateWeekday.Monday
     },
     like: ['烤芦笋', '牛排', '啤酒', '辣椒'],
     dislike: ['黏土', '石头', '杂草', '木材', '硬木', '垃圾', '海草', '绿藻', '浮木', '蜗牛'],
@@ -18,4 +18,4 @@ export default {
         x: 0,
         y: 0
     }
-} as Village.NPC
+} as NPC

@@ -1,21 +1,21 @@
-import { Village } from "../def";
+import { GDateSeason, GDateWeekday, Gender, GLocationName, NPC } from "../def/village";
 
 export default {
     name: 'Emily',
     description: '充满艺术气息的裁缝，Haley的姐姐',
-    gender: Village.Gender.Female,
+    gender: Gender.Female,
     features: ['紫发', '喜欢手工', '能与灵魂交流'],
     birthday: {
-        season: Village.GDateSeason.Spring,
+        season: GDateSeason.Spring,
         day: 27,
         year: 0,
-        weekday: Village.GDateWeekday.Thursday
+        weekday: GDateWeekday.Thursday
     },
     like: ['布料', '羊毛', '翡翠'],
     dislike: ['矿石', '肉类', '垃圾'],
     address: {
-        name: Village.GLocationName.Town,
+        name: GLocationName.Town,
         x: 48,
         y: 53
     }
-} as Village.NPC
+} as NPC

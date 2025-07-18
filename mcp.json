@@ -6,7 +6,8 @@
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
                 "./src",
-                "./def"
+                "./def",
+                "./doc"
             ]
         },
         "git": {

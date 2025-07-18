@@ -2,7 +2,7 @@
 local ____exports = {}
 local ____def = require("src.def")
 local Village = ____def.Village
-____exports.Willy = {
+____exports.default = {
     name = "Willy",
     description = "经营海滩鱼店的渔夫，热爱大海和捕鱼",
     gender = Village.Gender.Male,
