@@ -1,0 +1,249 @@
+import { Dialogue } from '../../def/story';
+
+export const dialogues: Record<string, Dialogue> = {
+  // 第一集：春·初来乍到
+  dialogue_spring_arrival_tom_1: {
+    id: 'dialogue_spring_arrival_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（擦汗）这箱子比想象中重...城里的快递员可比这轻松多了。',
+    next: 'dialogue_spring_arrival_claire_1'
+  },
+  dialogue_spring_arrival_claire_1: {
+    id: 'dialogue_spring_arrival_claire_1',
+    speakerId: 'speaker_claire',
+    text: '别抱怨啦，亲爱的。至少我们终于有自己的院子了——看，Lila的房间窗户正对着森林呢。',
+    next: 'dialogue_spring_arrival_lila_1'
+  },
+  dialogue_spring_arrival_lila_1: {
+    id: 'dialogue_spring_arrival_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（低头玩手机）森林里又没有WiFi...',
+    next: 'dialogue_spring_arrival_claire_2'
+  },
+  dialogue_spring_arrival_claire_2: {
+    id: 'dialogue_spring_arrival_claire_2',
+    speakerId: 'speaker_claire',
+    text: '（轻声）别这样，宝贝。过段时间你会交到新朋友的。（转向玩家）真不好意思让您见笑了，需要帮忙搬这个书架吗？',
+    choices: [
+      {
+        id: 'dialogue_spring_arrival_choice_help',
+        speakerId: 'player',
+        text: '我来帮你们吧！',
+        next: 'dialogue_spring_arrival_tom_2'
+      },
+      {
+        id: 'dialogue_spring_arrival_choice_decline',
+        speakerId: 'player',
+        text: '抱歉，我还有事...',
+        next: 'dialogue_spring_arrival_tom_3'
+      }
+    ]
+  },
+  dialogue_spring_arrival_tom_2: {
+    id: 'dialogue_spring_arrival_tom_2',
+    speakerId: 'speaker_tom',
+    text: '太感谢了！（递出小罐子）这是我带来的城市蜂蜜，算是见面礼。',
+    next: null
+  },
+  dialogue_spring_arrival_tom_3: {
+    id: 'dialogue_spring_arrival_tom_3',
+    speakerId: 'speaker_tom',
+    text: '没关系，我们慢慢搬也行。（叹气）看来适应乡村生活第一步就很难...',
+    next: null
+  },
+
+  // 第二集：春末·农场危机
+  dialogue_spring_crisis_tom_1: {
+    id: 'dialogue_spring_crisis_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（蹲在破损蜂箱前）全完了...这场雨把蜂箱盖吹走了，蜜蜂都跑了...',
+    next: 'dialogue_spring_crisis_claire_1'
+  },
+  dialogue_spring_crisis_claire_1: {
+    id: 'dialogue_spring_crisis_claire_1',
+    speakerId: 'speaker_claire',
+    text: '别自责了，Tom。我们可以修好它的——需要硬木和野花吸引蜜蜂回来。',
+    next: 'dialogue_spring_crisis_lila_1'
+  },
+  dialogue_spring_crisis_lila_1: {
+    id: 'dialogue_spring_crisis_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（小声）蜜蜂...还会回来吗？',
+    next: 'dialogue_spring_crisis_tom_2'
+  },
+  dialogue_spring_crisis_tom_2: {
+    id: 'dialogue_spring_crisis_tom_2',
+    speakerId: 'speaker_tom',
+    text: '（惊讶抬头）如果我们把蜂箱修好，再放上他们喜欢的野花...也许会的。怎么了，Lila？',
+    next: 'dialogue_spring_crisis_lila_2'
+  },
+  dialogue_spring_crisis_lila_2: {
+    id: 'dialogue_spring_crisis_lila_2',
+    speakerId: 'speaker_lila',
+    text: '（低头画速写）没什么...就是觉得它们挺可怜的。明天我帮你检查蜂箱吧。',
+    next: null
+  },
+
+  // 第三集：夏·花舞节融冰
+  dialogue_summer_flower_dance_lila_1: {
+    id: 'dialogue_summer_flower_dance_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（躲在橡树后）阿比盖尔他们好像在说新出的游戏...我以前也玩过，但现在...',
+    next: 'dialogue_summer_flower_dance_claire_1'
+  },
+  dialogue_summer_flower_dance_claire_1: {
+    id: 'dialogue_summer_flower_dance_claire_1',
+    speakerId: 'speaker_claire',
+    text: '（端着曲奇走来）艾芙琳说花舞节的舞伴要自己找呢。要不要去问问山姆？他上次还说喜欢你的速写本。',
+    next: 'dialogue_summer_flower_dance_lila_2'
+  },
+  dialogue_summer_flower_dance_lila_2: {
+    id: 'dialogue_summer_flower_dance_lila_2',
+    speakerId: 'speaker_lila',
+    text: '（脸红）妈！他只是...（看到玩家）抱歉，你们在聊什么？',
+    choices: [
+      {
+        id: 'dialogue_summer_choice_invite',
+        speakerId: 'player',
+        text: '要不要一起跳舞？',
+        next: 'dialogue_summer_flower_dance_lila_3'
+      },
+      {
+        id: 'dialogue_summer_choice_comfort',
+        speakerId: 'player',
+        text: '一个人待着也不错。',
+        next: 'dialogue_summer_flower_dance_lila_4'
+      }
+    ]
+  },
+  dialogue_summer_flower_dance_lila_3: {
+    id: 'dialogue_summer_flower_dance_lila_3',
+    speakerId: 'speaker_lila',
+    text: '（眼睛发亮）真的可以吗？（小声）其实我练习了好久...',
+    next: null
+  },
+  dialogue_summer_flower_dance_lila_4: {
+    id: 'dialogue_summer_flower_dance_lila_4',
+    speakerId: 'speaker_lila',
+    text: '（低头）嗯...也许明年吧。（转身画画）',
+    next: null
+  },
+
+  // 第四集：夏末·家庭秘密
+  dialogue_summer_secret_tom_1: {
+    id: 'dialogue_summer_secret_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（灌酒）城里那笔债...我以为能靠奖金还上的...',
+    next: 'dialogue_summer_secret_claire_1'
+  },
+  dialogue_summer_secret_claire_1: {
+    id: 'dialogue_summer_secret_claire_1',
+    speakerId: 'speaker_claire',
+    text: '（坐在对面）我知道你偷偷打两份工。为什么不告诉我们？',
+    next: 'dialogue_summer_secret_tom_2'
+  },
+  dialogue_summer_secret_tom_2: {
+    id: 'dialogue_summer_secret_tom_2',
+    speakerId: 'speaker_tom',
+    text: '（苦笑）怕你觉得跟我受苦...Lila转学那天，她说想回城里的公寓。',
+    next: 'dialogue_summer_secret_claire_2'
+  },
+  dialogue_summer_secret_claire_2: {
+    id: 'dialogue_summer_secret_claire_2',
+    speakerId: 'speaker_claire',
+    text: '（握住他的手）傻瓜，我们现在有蜂场，有甜屋，还有...（看窗外）Lila昨天在画蜂箱，不是吗？',
+    next: null
+  },
+
+  // 第五集：秋·展览会合作
+  dialogue_fall_exhibition_claire_1: {
+    id: 'dialogue_fall_exhibition_claire_1',
+    speakerId: 'speaker_claire',
+    text: '（搅拌苹果派馅）评委喜欢有故事的展品！Tom的蜂蜜代表新开始，Lila的海报...',
+    next: 'dialogue_fall_exhibition_lila_1'
+  },
+  dialogue_fall_exhibition_lila_1: {
+    id: 'dialogue_fall_exhibition_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（撕画纸）蓝莓颜料用完了...商店卖的都太亮，不像蜂场的颜色。',
+    next: 'dialogue_fall_exhibition_tom_1'
+  },
+  dialogue_fall_exhibition_tom_1: {
+    id: 'dialogue_fall_exhibition_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（翻工具箱）后山蓝莓丛熟了，要不要试试自己榨颜料？像你小时候做植物标本那样。',
+    next: 'dialogue_fall_exhibition_lila_2'
+  },
+  dialogue_fall_exhibition_lila_2: {
+    id: 'dialogue_fall_exhibition_lila_2',
+    speakerId: 'speaker_lila',
+    text: '（眼睛亮起来）对哦！（转向玩家）你能帮我采些蓝莓吗？我教你怎么用盐巴固色。',
+    next: null
+  },
+
+  // 第六集：秋末·社区互助
+  dialogue_fall_storm_tom_1: {
+    id: 'dialogue_fall_storm_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（冒雨搬皮埃尔的南瓜）玛妮的鸡棚顶被掀了，得先固定栅栏！',
+    next: 'dialogue_fall_storm_claire_1'
+  },
+  dialogue_fall_storm_claire_1: {
+    id: 'dialogue_fall_storm_claire_1',
+    speakerId: 'speaker_claire',
+    text: '（递热可可）乔迪说她家烤箱能帮忙烘干受潮的谷物，孩子们在搬柴火呢。',
+    next: 'dialogue_fall_storm_tom_2'
+  },
+  dialogue_fall_storm_tom_2: {
+    id: 'dialogue_fall_storm_tom_2',
+    speakerId: 'speaker_tom',
+    text: '（擦脸笑）以前在城里，邻居住对门都不说话...（远处传来Lila笑声）那丫头在教文森特扎稻草人？',
+    next: null
+  },
+
+  // 第七集：冬·冰雪节抉择
+  dialogue_winter_choice_tom_1: {
+    id: 'dialogue_winter_choice_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（踢开积雪）你妈妈收到城里朋友的邮件，说有烘焙比赛...我们可以回去住两周。',
+    next: 'dialogue_winter_choice_lila_1'
+  },
+  dialogue_winter_choice_lila_1: {
+    id: 'dialogue_winter_choice_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（堆雪人沉默）...城里的画室有暖气，但阿比盖尔说要教我用松针做颜料。',
+    next: 'dialogue_winter_choice_tom_2'
+  },
+  dialogue_winter_choice_tom_2: {
+    id: 'dialogue_winter_choice_tom_2',
+    speakerId: 'speaker_tom',
+    text: '（蹲下来）你想回去吗？爸爸不强迫你。',
+    next: 'dialogue_winter_choice_lila_2'
+  },
+  dialogue_winter_choice_lila_2: {
+    id: 'dialogue_winter_choice_lila_2',
+    speakerId: 'speaker_lila',
+    text: '（扔雪球）笨蛋爸爸！（笑）雪人还没鼻子呢——用你上次做蜂箱剩下的木头吧。',
+    next: null
+  },
+
+  // 第八集：冬末·星露谷日
+  dialogue_winter_final_tom_1: {
+    id: 'dialogue_winter_final_tom_1',
+    speakerId: 'speaker_tom',
+    text: '（举杯）敬星露谷——敬真正的家。',
+    next: 'dialogue_winter_final_claire_1'
+  },
+  dialogue_winter_final_claire_1: {
+    id: 'dialogue_winter_final_claire_1',
+    speakerId: 'speaker_claire',
+    text: '（笑着碰杯）也敬我们的第一个朋友。（递出饼干盒）这是新烤的蜂蜜饼干，带回去当伴手礼吧？',
+    next: 'dialogue_winter_final_lila_1'
+  },
+  dialogue_winter_final_lila_1: {
+    id: 'dialogue_winter_final_lila_1',
+    speakerId: 'speaker_lila',
+    text: '（递出画框）这个...送给你。蜂箱修理那天的速写。',
+    next: null
+  }
+};
