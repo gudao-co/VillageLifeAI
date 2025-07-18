@@ -7,9 +7,21 @@ export namespace Village {
      * 星露谷世界的季节
      */
     export enum GDateSeason {
+        /**
+         * 春季
+         */
         Spring,
+        /**
+         * 夏季
+         */
         Summer,
+        /**
+         * 秋季
+         */
         Autumn,
+        /**
+         * 冬季
+         */
         Winter,
     }
 
@@ -188,4 +200,24 @@ export namespace Village {
          */
         address: GLocation
     }
+
+    /**
+     * 对话
+     */
+    export interface Say {
+        /**
+         * 对话描述
+         */
+        description: string
+        /**
+        * 对话特征
+        */
+        features: string[]
+        /**
+         * 运行对话
+         * @param npcs 参与对话的NPC
+         */
+        run(...npcs: NPC[]): void
+    }
+
 }

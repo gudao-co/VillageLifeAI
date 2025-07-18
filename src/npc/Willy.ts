@@ -1,6 +1,6 @@
 import { Village } from '../def';
 
-export const Willy: Village.NPC = {
+export default {
   name: 'Willy',
   description: '经营海滩鱼店的渔夫，热爱大海和捕鱼',
   gender: Village.Gender.Male,

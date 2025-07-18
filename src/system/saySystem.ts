@@ -9,11 +9,10 @@ export interface SayOption {
 
 export interface ISayProfile {
     name: string
-    title: string
-    res: string
-    style: SayProfileStyle
+    title?: string
+    res?: string
+    style?: SayProfileStyle
 }
-
 
 export class SaySystem extends EventEmiter {
 

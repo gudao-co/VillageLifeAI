@@ -11,3 +11,8 @@
         2. 读取文件 src/npc/Abigail.ts, 这是一个角色样例, 不要修改它的内容
         3. 每个NPC的信息存储到 src/npc/<NPC名>.ts 文件
         4. 可使用的 TypeScript 类型已经定义好, 不可修改类型, 请适配类型
+    2. 生成对话 TypeScript 文件, 规则如下:
+        1. 读取文件 src/def.ts , 其中定义了对话 Say 相关的可用类型
+        2. 读取文件 src/say/spring.ts, 这是一个对话样例, 不要修改它的内容
+        3. 每个对话的信息存储到 src/say/<对话名>.ts 文件
+        4. 可使用的 TypeScript 类型已经定义好, 不可修改类型, 请适配类型

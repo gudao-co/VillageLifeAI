@@ -1,6 +1,6 @@
 import { Village } from '../def';
 
-export const Wizard: Village.NPC = {
+export default {
   name: 'Wizard',
   description: '居住在巫师塔的神秘法师，掌握着古老的魔法知识',
   gender: Village.Gender.Male,

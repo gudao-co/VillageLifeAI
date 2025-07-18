@@ -1,6 +1,6 @@
 import { Village } from '../def';
 
-export const Krobus: Village.NPC = {
+export default {
   name: 'Krobus',
   description: '居住在下水道的影子人，性格温和且神秘',
   gender: Village.Gender.Male,
