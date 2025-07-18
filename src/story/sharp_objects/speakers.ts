@@ -1,4 +1,4 @@
-import { Speaker } from '../../../def/story';
+import { Speaker } from '../../def/story';
 
 export const speakers: Speaker[] = [
   { id: 'speaker_camille', name: '卡米尔', description: '玩家角色，归乡记者，携带笔记本道具', tags: ['主角', '内敛敏感', '腕部伤疤'] },

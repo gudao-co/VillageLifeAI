@@ -1,3 +1,24 @@
+/**
+ * 发言人
+ */
+export interface Speaker {
+    /**
+     * 发言人ID (一个剧本内唯一标识)
+     */
+    id: string
+    /**
+     * 发言人名称
+     */
+    name: string
+    /**
+     * 发言人描述
+     */
+    description: string
+    /**
+     * 发言人特征
+     */
+    tags: string[]
+}
 
 /**
  * 对话内容
@@ -10,7 +31,7 @@ export interface Dialogue {
     /**
      * 对话发言人
      */
-    speaker: string
+    speakerId: string
     /**
      * 对话内容
      */
@@ -80,7 +101,7 @@ export interface Scene {
     /**
      * 场景参与人,按角色重要程度排序, 重要的在前面
      */
-    speakers: string[]
+    speakerIds: string[]
     /**
      * 场景内容 
      */
@@ -118,7 +139,7 @@ export interface Chapter {
     /**
      * 章节参与人, 按角色重要程度排序, 重要的在前面
      */
-    speakers: string[]
+    speakerIds: string[]
     /**
      * 章节场景
      */
@@ -153,5 +174,5 @@ export interface Script {
     /**
      * 参与人
      */
-    speakers: string[]
+    speakerIds: string[]
 }

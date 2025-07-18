@@ -1,4 +1,4 @@
-import { Script } from '../../../def/story';
+import { Script } from '../../def/story';
 
 export const scripts: Record<string, Script> = {
   script_tiny_beautiful_things: {

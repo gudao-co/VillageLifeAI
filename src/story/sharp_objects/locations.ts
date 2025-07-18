@@ -1,4 +1,4 @@
-import { Location } from '../../../def/story';
+import { Location } from '../../def/story';
 
 export const locations: Location[] = [
   { id: 'location_jodi_house', title: '乔迪家', description: '普瑞克庄园，包含上锁抽屉与阁楼木箱', tags: ['住宅', '关键道具', '家庭矛盾'] },

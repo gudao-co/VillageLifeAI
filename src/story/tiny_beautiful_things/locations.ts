@@ -1,4 +1,4 @@
-import { Location } from '../../../def/story';
+import { Location } from '../../def/story';
 
 export const locations: Record<string, Location> = {
   location_library_second_floor: {

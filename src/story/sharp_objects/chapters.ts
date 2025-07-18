@@ -1,4 +1,4 @@
-import { Chapter } from '../../../def/story';
+import { Chapter } from '../../def/story';
 
 export const chapters: Chapter[] = [
   { id: 'chapter_ep1', title: '归乡疑云', description: '卡米尔回到星露谷，儿童失踪案初现', tags: ['开端', '人物介绍'], speakerIds: ['speaker_camille', 'speaker_jodi', 'speaker_lewis'], sceneIds: ['scene_jodi_house_intro', 'scene_lewis_interrogation'] },

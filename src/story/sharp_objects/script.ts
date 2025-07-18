@@ -1,4 +1,4 @@
-import { Script } from '../../../def/story';
+import { Script } from '../../def/story';
 
 export const script: Script = {
   id: 'script_sharp_objects',

@@ -1,4 +1,4 @@
-import { Dialogue } from '../../../def/story';
+import { Dialogue } from '../../def/story';
 
 export const dialogues: Dialogue[] = [
   { id: 'dialogue_jodi_first_meeting', speakerId: 'speaker_jodi', text: '卡米尔？你瘦了…镇上最近不太平，那些孩子总往森林跑。对了，你父亲的遗物我放在阁楼上了——别碰那个木箱。', next: null },

@@ -1,4 +1,4 @@
-import { Scene } from '../../../def/story';
+import { Scene } from '../../def/story';
 
 export const scenes: Record<string, Scene> = {
   scene_ch1_library: {

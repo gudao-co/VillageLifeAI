@@ -1,4 +1,4 @@
-import { Speaker } from '../../../def/story';
+import { Speaker } from '../../def/story';
 
 export const speakers: Record<string, Speaker> = {
   speaker_emily: {

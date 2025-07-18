@@ -1,4 +1,4 @@
-import { Scene } from '../../../def/story';
+import { Scene } from '../../def/story';
 
 export const scenes: Scene[] = [
   { id: 'scene_jodi_house_intro', title: '归乡初见', description: '卡米尔与乔迪的首次对话', tags: ['开端', '家庭张力'], speakerIds: ['speaker_camille', 'speaker_jodi'], dialogueId: 'dialogue_jodi_first_meeting', dependentSceneIds: [], locationId: 'location_jodi_house' },

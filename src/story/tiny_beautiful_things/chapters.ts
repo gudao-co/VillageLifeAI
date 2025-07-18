@@ -1,4 +1,4 @@
-import { Chapter } from '../../../def/story';
+import { Chapter } from '../../def/story';
 
 export const chapters: Record<string, Chapter> = {
   chapter_ch1_first_seed: {

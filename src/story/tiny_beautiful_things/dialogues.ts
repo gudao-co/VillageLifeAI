@@ -1,4 +1,4 @@
-import { Dialogue } from '../../../def/story';
+import { Dialogue } from '../../def/story';
 
 export const dialogues: Record<string, Dialogue> = {
   dialogue_ch1_lib_emily_intro: {
