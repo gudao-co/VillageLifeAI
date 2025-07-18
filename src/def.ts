@@ -137,8 +137,17 @@ export namespace Village {
      * 星露谷世界的地址
      */
     export interface GLocation {
+        /**
+         * 星露谷世界的地址名称, 或是英文名称
+         */
         name: GLocationName | string
+        /**
+         * 星露谷世界的Tile坐标
+         */
         x: number
+        /**
+         * 星露谷世界的Tile坐标
+         */
         y: number
     }
 

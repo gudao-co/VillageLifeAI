@@ -2,7 +2,7 @@
 规则:
     1. 汇报进度使用工具 issueProgress
     2. 完成任务后使用工具 issueCompleted
-    3. 使用 git 提交修改记录, 并将 git commit hash 输出到 issueCompleted 中, 并推送到远端
+    3. 使用 git 提交修改记录, 并将 git commit hash 输出到 issueCompleted 中, 并使用 git push 推送到远端
     4. 使用 TypeScript 语言开发
     5. 使用命令 npm run build 验证修改的 TypeScript 文件是否正确, 若有错误请修正
 能力:
