@@ -5,7 +5,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch1_lib_emily_intro',
     speakerId: 'speaker_emily',
     text: '[玩家名]，这封信……说有个孩子害怕妈妈永远离开他。像极了当年妈妈化疗时的我……',
-    tags: ['第一章', '回忆触发'],
     choices: [
       {
         id: 'dialogue_ch1_lib_choice_seed',
@@ -37,7 +36,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch2_beach_jas_angry',
     speakerId: 'speaker_jas',
     text: '奶奶以前从不把我丢给Shane！你只关心那些陌生人的信！',
-    tags: ['第二章', '冲突'],
     next: 'dialogue_ch2_beach_emily_tremble'
   },
   dialogue_ch2_beach_emily_tremble: {
@@ -56,7 +54,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch3_greenhouse_caroline_teach',
     speakerId: 'speaker_caroline',
     text: '记住，即使埋在土里，只要心还在跳，就不算真正死去。',
-    tags: ['第三章', '回忆'],
     next: 'dialogue_ch3_greenhouse_emily_present'
   },
   dialogue_ch3_greenhouse_emily_present: {
@@ -69,7 +66,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch4_greenhouse_repair',
     speakerId: 'speaker_emily',
     text: '水管又冻裂了……妈妈以前总说温室是她的「情绪调节器」。（叹气）',
-    tags: ['第四章', '互动'],
     choices: [
       {
         id: 'dialogue_ch4_choice_help',
@@ -101,7 +97,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch5_forest_letter',
     speakerId: 'speaker_emily',
     text: '（举着信封）「我的猫咪Mittens三天没回家了，妈妈说它去追蝴蝶了……但我知道它是不要我了。」',
-    tags: ['第五章', '外部冲突'],
     choices: [
       {
         id: 'dialogue_ch5_choice_sympathize',
@@ -133,7 +128,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch6_mountain_confession',
     speakerId: 'speaker_emily',
     text: '（抓住Jas的肩膀）对不起……我怕变成妈妈那样的工作狂，结果却变成了缺席的妈妈。',
-    tags: ['第六章', '高潮'],
     next: 'dialogue_ch6_jas_response'
   },
   dialogue_ch6_jas_response: {
@@ -152,7 +146,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch7_house_reveal',
     speakerId: 'speaker_emily',
     text: '（摊开读者感谢信）这个说专栏让她有勇气离婚，那个说……（指向Jas）像你一样的小女孩现在会给流浪猫写信了。',
-    tags: ['第七章', '真相'],
     next: 'dialogue_ch7_jas_understand'
   },
   dialogue_ch7_jas_understand: {
@@ -171,7 +164,6 @@ export const dialogues: Record<string, Dialogue> = {
     id: 'dialogue_ch8_square_confession',
     speakerId: 'speaker_emily',
     text: '（站在丰收节舞台）我是「亲爱的糖糖」。这些信……是我们互相治愈的证明。',
-    tags: ['第八章', '结局'],
     next: 'dialogue_ch8_alex_tulip'
   },
   dialogue_ch8_alex_tulip: {
