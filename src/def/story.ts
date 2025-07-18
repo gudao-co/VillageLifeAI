@@ -2,7 +2,11 @@
 /**
  * 对话内容
  */
-export interface StoryDialogue {
+export interface Dialogue {
+    /**
+     * 对话内容ID (一个对内唯一标识)
+     */
+    id: string
     /**
      * 对话发言人
      */
@@ -12,23 +16,19 @@ export interface StoryDialogue {
      */
     text: string
     /**
-     * 对话内容ID (一个对内唯一标识)
-     */
-    id: string
-    /**
      * 对话选项, 至少需要两个选项
      */
-    choices?: StoryDialogue[]
+    choices?: Dialogue[]
     /**
      * 下一个对话内容
      */
-    next?: StoryDialogue
+    next?: string | null
 }
 
 /**
  * 事件触发条件属性
  */
-export enum StorySceneConditionAttribute {
+export enum ConditionAttribute {
     /**
      * 两个角色直接的好感度
      */
@@ -36,129 +36,73 @@ export enum StorySceneConditionAttribute {
 }
 
 /**
- * 事件触发条件比较
+ * 场景触发位置
  */
-export enum StorySceneConditionCompare {
+export interface Location {
     /**
-     * 等于
-     */
-    Eq = 'Eq',
-    /**
-     * 大于
-     */
-    Gt = 'Gt',
-    /**
-     * 小于
-     */
-    Lt = 'Lt',
-    /**
-     * 不等于
-     */
-    Neq = 'Neq',
-    /**
-     * 大于等于
-     */
-    Gte = 'Gte',
-    /**
-     * 小于等于
-     */
-    Lte = 'Lte',
-}
-
-/**
- * 事件触发条件
- */
-export interface StorySceneCondition {
-    /**
-     * 参与人 01
-     */
-    speaker_01: string
-    /**
-     * 参与人 02, speaker_01 与 speaker_02 同时存在时, 表示关系属性, speaker_01 对 speaker_02 的好感度 Favorability
-     */
-    speaker_02?: string
-    /**
-     * 触发条件属性
-     */
-    attr: StorySceneConditionAttribute
-    /**
-     * 触发条件比较
-     */
-    compare: StorySceneConditionCompare
-    /**
-     * 触发条件值
-     */
-    value: number
-}
-
-/**
- * 事件触发位置
- */
-export interface StorySceneLocation {
-    /**
-     * 触发位置ID (一个剧本内唯一标识)
+     * 场景位置ID (一个剧本内唯一标识)
      */
     id: string
     /**
-     * 触发位置标题
+     * 场景位置标题
      */
     title: string
     /**
-     * 触发位置描述
+     * 场景位置描述
      */
     description: string
     /**
-     * 触发位置特征
+     * 场景位置特征
      */
-    features: string[]
+    tags: string[]
 }
 
 /**
- * 故事剧本事件
+ * 剧本场景
  */
-export interface StoryScene {
+export interface Scene {
     /**
-     * 事件ID (一个剧本内唯一标识)
+     * 场景ID (一个章节内唯一标识)
      */
     id: string
     /**
-     * 事件标题
+     * 场景标题
      */
     title: string
     /**
-     * 事件描述
+     * 场景描述
      */
     description: string
     /**
-     * 事件特征
+     * 场景特征
      */
-    features: string[]
+    tags: string[]
     /**
-     * 事件参与人,按角色重要程度排序, 重要的在前面
+     * 场景参与人,按角色重要程度排序, 重要的在前面
      */
     speakers: string[]
     /**
-     * 事件内容
+     * 场景内容 
      */
-    dialogue: StoryDialogue
+    dialogueId: string
     /**
-     * 依赖的事件ID
+     * 依赖的场景ID
      */
-    dependentEvents: string[]
+    dependentSceneIds: string[]
     /**
-     * 触发条件,多个同时满足条件
+     * 场景触发位置
      */
-    conditions: StorySceneCondition[]
-    /**
-     * 事件触发位置
-     */
-    location: StorySceneLocation
+    locationId: string
 }
 
 /**
- * 故事剧本章节
+ * 章节
  */
-export interface StoryChapter {
+export interface Chapter {
+    /**
+     * 章节ID (剧本内唯一)
+     */
+    id: string
     /**
      * 章节标题
      */
@@ -168,9 +112,9 @@ export interface StoryChapter {
      */
     description: string
     /**
-     * 章节特征
+     * 章节标签
      */
-    features: string[]
+    tags: string[]
     /**
      * 章节参与人, 按角色重要程度排序, 重要的在前面
      */
@@ -178,13 +122,18 @@ export interface StoryChapter {
     /**
      * 章节场景
      */
-    scenes: StoryScene[]
+    sceneIds: string[]
 }
 
+
 /**
- * 故事剧本
+ * 剧本
  */
-export interface Story {
+export interface Script {
+    /**
+     * 剧本ID
+     */
+    id: string
     /**
      * 剧本标题
      */
@@ -194,15 +143,15 @@ export interface Story {
      */
     description: string
     /**
-     * 剧本特征
+     * 剧本标签
      */
-    features: string[]
-    /**
-     * 剧本参与人,按角色重要程度排序, 重要的在前面
-     */
-    speakers: string[]
+    tags: string[]
     /**
      * 章节
      */
-    chapters: StoryChapter[]
+    chapterIds: string[]
+    /**
+     * 参与人
+     */
+    speakers: string[]
 }

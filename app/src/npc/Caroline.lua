@@ -1,11 +1,13 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-local ____def = require("src.def")
-local Village = ____def.Village
+local ____village = require("src.def.village")
+local GDateSeason = ____village.GDateSeason
+local GDateWeekday = ____village.GDateWeekday
+local Gender = ____village.Gender
 ____exports.default = {
     name = "Caroline",
     description = "卡洛琳",
-    gender = Village.Gender.Female,
+    gender = Gender.Female,
     features = {
         "所有花",
         "水果",
@@ -13,7 +15,7 @@ ____exports.default = {
         "宝石(除五彩碎片)",
         "蜂蜜"
     },
-    birthday = {season = Village.GDateSeason.Winter, day = 7, year = 0, weekday = Village.GDateWeekday.Monday},
+    birthday = {season = GDateSeason.Winter, day = 7, year = 0, weekday = GDateWeekday.Monday},
     like = {"绿茶", "夏季孢子", "五彩碎片", "兔子的脚"},
     dislike = {
         "黏土",

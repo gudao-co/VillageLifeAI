@@ -1,13 +1,16 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-local ____def = require("src.def")
-local Village = ____def.Village
+local ____village = require("src.def.village")
+local GDateSeason = ____village.GDateSeason
+local GDateWeekday = ____village.GDateWeekday
+local Gender = ____village.Gender
+local GLocationName = ____village.GLocationName
 ____exports.default = {
     name = "Wizard",
     description = "居住在巫师塔的神秘法师，掌握着古老的魔法知识",
-    gender = Village.Gender.Male,
+    gender = Gender.Male,
     features = {"神秘的巫师", "居住在巫师塔", "研究魔法"},
-    birthday = {season = Village.GDateSeason.Winter, day = 17, year = 0, weekday = Village.GDateWeekday.Saturday},
+    birthday = {season = GDateSeason.Winter, day = 17, year = 0, weekday = GDateWeekday.Saturday},
     like = {
         "虚空蛋",
         "五彩碎片",
@@ -29,6 +32,6 @@ ____exports.default = {
         "浮木",
         "蜗牛"
     },
-    address = {name = Village.GLocationName.Town, x = 120, y = 45}
+    address = {name = GLocationName.Town, x = 120, y = 45}
 }
 return ____exports

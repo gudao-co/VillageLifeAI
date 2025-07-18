@@ -1,10 +1,10 @@
 --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-local ____def = require("src.def")
-local GDateSeason = ____def.GDateSeason
-local GDateWeekday = ____def.GDateWeekday
-local Gender = ____def.Gender
-local GLocationName = ____def.GLocationName
+local ____village = require("src.def.village")
+local GDateSeason = ____village.GDateSeason
+local GDateWeekday = ____village.GDateWeekday
+local Gender = ____village.Gender
+local GLocationName = ____village.GLocationName
 ____exports.default = {
     name = "Abigail",
     description = "星露谷的女主人公，镇长Lewis的女儿，喜欢冒险和神秘事物",
