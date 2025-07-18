@@ -40,7 +40,7 @@ export const dialogues: Record<string, Dialogue> = {
   dialogue_gus_reveal: {
     id: 'dialogue_gus_reveal',
     speakerId: 'speaker_gus',
-    text: '(压低声音)老皮埃尔当年想考美术学院，被他母亲骂了三个月'不务正业'...现在倒把这枷锁扣女儿身上了',
+    text: '(压低声音)老皮埃尔当年想考美术学院，被他母亲骂了三个月\'不务正业\'...现在倒把这枷锁扣女儿身上了',
     next: null
   },
   dialogue_tea_party_mediation: {
